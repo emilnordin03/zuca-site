@@ -773,6 +773,19 @@ body { font-family:'Nunito',sans-serif; background:#1C1209; }
   border-color:rgba(184,92,56,.55);
   background:rgba(245,225,195,.06);
 }
+.modal-select {
+  width:100%; padding:11px 14px;
+  background:rgba(245,225,195,.04);
+  border:1px solid rgba(184,92,56,.25);
+  border-radius:4px;
+  color:rgba(245,225,195,.85);
+  font-family:'IBM Plex Mono',monospace; font-size:11px;
+  letter-spacing:.4px;
+  appearance:none; -webkit-appearance:none;
+  cursor:pointer;
+}
+.modal-select:focus { border-color:rgba(184,92,56,.55); outline:none; }
+.modal-select option { background:#1C1209; color:rgba(245,225,195,.85); }  
 
 .modal-note {
   font-family:'IBM Plex Mono',monospace; font-size:9px;
@@ -851,6 +864,8 @@ export default function ZucaGate() {
   const [modal, setModal]         = useState(false);
   const [email, setEmail]         = useState("");
   const [phone, setPhone]         = useState("");
+  const [hearAbout, setHearAbout] = useState("");
+  const [reason, setReason]       = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [isDup, setIsDup]         = useState(false);
@@ -878,7 +893,7 @@ export default function ZucaGate() {
     })();
   }, []);
 
-  function handleBuy() { setModal(true); setSubmitted(false); setIsDup(false); setFormErr(""); setEmail(""); setPhone(""); }
+  function handleBuy() { setModal(true); setSubmitted(false); setIsDup(false); setFormErr(""); setEmail(""); setPhone(""); setHearAbout(""); setReason(""); }
   function closeModal() { setModal(false); }
 
   async function submitPreorder(e) {
@@ -897,7 +912,7 @@ export default function ZucaGate() {
     }
 
     // New submission — save record
-    const record = { email: em, phone: phone.trim(), ts: new Date().toISOString() };
+    const record = { email: em, phone: phone.trim(), hearAbout, reason, ts: new Date().toISOString() };
     subs[em] = record;
     try { await window.storage.set(SUBS_KEY, JSON.stringify(subs), true); } catch {}
 
@@ -993,6 +1008,28 @@ export default function ZucaGate() {
                   onMouseEnter={()=>setHov(true)}
                   onMouseLeave={()=>setHov(false)}
                 />
+              </div>
+              <div className="modal-field">
+                <label className="modal-label">How did you hear about us? <span style={{color:"rgba(200,170,130,.3)"}}>optional</span></label>
+                <select className="modal-select" value={hearAbout} onChange={e=>setHearAbout(e.target.value)}>
+                  <option value="">Select one</option>
+                  <option value="physician">Physician recommendation</option>
+                  <option value="friend">Friend or family</option>
+                  <option value="social">Social media</option>
+                  <option value="stanford">Stanford community</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div className="modal-field">
+                <label className="modal-label">Why do you want Zuca? <span style={{color:"rgba(200,170,130,.3)"}}>optional</span></label>
+                <select className="modal-select" value={reason} onChange={e=>setReason(e.target.value)}>
+                  <option value="">Select one</option>
+                  <option value="gut">Gut health</option>
+                  <option value="fiber">Increase fiber intake</option>
+                  <option value="sustainability">Sustainable eating</option>
+                  <option value="weight">Weight management</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
               <div className="modal-note">No payment now. We'll reach out when your order is ready to confirm.</div>
               {formErr && <div className="modal-err">{formErr}</div>}
