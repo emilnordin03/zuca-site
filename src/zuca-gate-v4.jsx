@@ -773,6 +773,7 @@ body { font-family:'Nunito',sans-serif; background:#1C1209; }
   border-color:rgba(184,92,56,.55);
   background:rgba(245,225,195,.06);
 }
+
 .modal-select {
   width:100%; padding:11px 14px;
   background:rgba(245,225,195,.04);
@@ -785,9 +786,9 @@ body { font-family:'Nunito',sans-serif; background:#1C1209; }
   cursor:pointer;
 }
 .modal-select:focus { border-color:rgba(184,92,56,.55); outline:none; }
-.modal-select option { background:#1C1209; color:rgba(245,225,195,.85); }  
+.modal-select option { background:#1C1209; color:rgba(245,225,195,.85); }
 
-.modal-note {
+
   font-family:'IBM Plex Mono',monospace; font-size:9px;
   letter-spacing:.5px; color:rgba(200,170,130,.35);
   margin-bottom:28px; line-height:1.7;
