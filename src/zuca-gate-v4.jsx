@@ -1116,7 +1116,13 @@ export default function ZucaGate() {
             </p>
 
             <p className="ai-line si3b">
-              The world's building AI chatbots. We're building food that heals.
+              Bad food broke health.<br/>
+              Better <span className="scribble-wrap">
+                <span className="scribble-word">AI</span>
+                <svg className="scribble-svg" viewBox="0 0 36 10" preserveAspectRatio="none">
+                  <path d="M2,6 C5,3 8,8 12,5 C16,2 19,7 23,5 C27,3 30,7 34,5" stroke="rgba(232,25,44,.7)" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                </svg>
+              </span> food fixes it.
             </p>
 
             <div className="data-row si4">
