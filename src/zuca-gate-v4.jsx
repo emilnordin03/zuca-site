@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const STORAGE_KEY = "zuca_preorder_v2";
 const SUBS_KEY    = "zuca_submissions_v1";
 // Paste your Google Apps Script webhook URL here:
-const SHEETS_URL  = "https://script.google.com/macros/s/AKfycbzbC2iN4t6HdqvIj5SqYCuMv6iogDO03BskH4H1cNjGmUCL6rJDKchfYpdcNUqiTHFh/exec";
+const SHEETS_URL  = "https://script.google.com/macros/s/AKfycbxIz_8Lu9e5T0Vk17Oldoo2116dD-djP7_S8Lu3G4P6_z0ZXpdasyG20KEK9V8GOcEX/exec";
 
 // ─── Grain canvas ───────────────────────────────────────────────────────────
 function useGrain(canvasRef) {
