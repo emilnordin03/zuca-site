@@ -888,10 +888,13 @@ export default function ZucaGate() {
   }, []);
 
   useEffect(() => {
-    (async () => {
-      try { const r = await window.storage.get(STORAGE_KEY, true); setClicks(r ? parseInt(r.value) : 0); }
-      catch { setClicks(0); }
-    })();
+  (async () => {
+    try {
+      const r = await fetch(SHEETS_URL);
+      const data = await r.json();
+      setClicks(data.count || 0);
+    } catch { setClicks(0); }
+  })();
   }, []);
 
   function handleBuy() { setModal(true); setSubmitted(false); setIsDup(false); setFormErr(""); setEmail(""); setPhone(""); setHearAbout(""); setReason(""); }
