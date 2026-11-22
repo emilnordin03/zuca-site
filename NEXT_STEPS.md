@@ -98,7 +98,7 @@ within a minute or two. Treat `main` as live until you've checked.
 2. You'll see a list of projects. Click the one for Zuca (likely named `zuca-site`).
 3. Look at the tabs across the top: **Project → Settings → Git**.
 4. On that page, look for:
-   - **"Connected Git Repository."** If it shows `Zuca-Snacks/zuca-site`, then yes —
+   - **"Connected Git Repository."** If it shows `emilnordin03/zuca-site`, then yes —
      GitHub is wired to Vercel and pushes trigger deploys. If it says *not connected*,
      then deploys are manual and merging changes nothing until you deploy by hand.
    - **"Production Branch."** Whatever branch is named here is the one that publishes

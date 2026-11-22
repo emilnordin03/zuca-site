@@ -310,7 +310,7 @@ growth to defend against, only signal dilution.
 
 ## 📧 THE REPO IS PUBLIC, SO EVERY EXAMPLE ADDRESS IS A PUBLISHED ONE
 
-Confirmed rather than assumed — `gh repo view` reports `Zuca-Snacks/zuca-site`
+Confirmed rather than assumed — `gh repo view` reports `emilnordin03/zuca-site`
 as **PUBLIC**. That changes what an illustrative address is: not a placeholder,
 but a string committed to a scrapeable public tree, pointing at whoever owns the
 domain.

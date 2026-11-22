@@ -1,6 +1,6 @@
 # Zuca — Security & Privacy Assessment
 
-**Scope:** `github.com/Zuca-Snacks/zuca-site` @ branch `sec/hardening`, cut from `main` (commit `4074263`).
+**Scope:** `github.com/emilnordin03/zuca-site` @ branch `sec/hardening`, cut from `main` (commit `4074263`).
 **Assessed:** 2026-08-15 · **Assessor:** Agent 3 (appsec / privacy engineering)
 **Status:** diagnosis complete; remediation in progress on this branch. Nothing merged to `main`.
 
