@@ -14,7 +14,7 @@
 // From the Oct 27 2026 label panels (Zuca_Nutrition_Labels_Oct2026):
 //   Peanut Cookie Dough: peanuts, milk, soy.
 //   Chocolate Raspberry Sea Salt: tree nuts (cashews), soy.
-//   Maple Butter Pecan: tree nuts (cashews, pecans), milk, soy.
+//   Maple Pecan: tree nuts (cashews, pecans), milk, soy.
 // Milk comes from ghee, soy from the tocopherol oil. Two flavours contain
 // milk, so the site must NOT say vegan or plant-based. The pack panel is the
 // statement to rely on; keep this list in step with it.
@@ -56,7 +56,7 @@
 // (50g). 16g fiber in every flavour. Calories and protein differ by flavour:
 //   Peanut Cookie Dough 170 kcal, 5g protein
 //   Chocolate Raspberry Sea Salt 160 kcal, 3g protein
-//   Maple Butter Pecan 180 kcal, 3g protein
+//   Maple Pecan 180 kcal, 3g protein
 // All per serving, none per bite.
 //
 // SOURCE: the label panels calculated 27 Oct 2026 and the front labels Emil
@@ -169,7 +169,7 @@ export const HEADLINES = {
     id: "b",
     headline: "Juiceries throw the fiber away. We rescued it and turned it into dessert.",
     subhead:
-      "16g of fiber per serving. Peanut Cookie Dough, Chocolate Raspberry Sea Salt or Maple Butter Pecan.",
+      "16g of fiber per serving. Peanut Cookie Dough, Chocolate Raspberry Sea Salt or Maple Pecan.",
   },
   // C — category stat first. Highest-context, but opens on the reader's deficit
   // rather than on the product.
@@ -404,7 +404,7 @@ const INGREDIENTS = 'The full ingredient list will be on the pack.';
 export const faq = [
   {
     q: "What does it actually taste like?",
-    a: "Like a dessert someone put effort into, not like a health food. Peanut Cookie Dough is roasted peanut and chocolate chips in a soft cookie dough. Chocolate Raspberry Sea Salt is tart and deep, with the salt landing at the end. Maple Butter Pecan is warm and toasty and only gently sweet. All three are chewy, not chalky.",
+    a: "Like a dessert someone put effort into, not like a health food. Peanut Cookie Dough is roasted peanut and chocolate chips in a soft cookie dough. Chocolate Raspberry Sea Salt is tart and deep, with the salt landing at the end. Maple Pecan is warm and toasty and only gently sweet. All three are chewy, not chalky.",
   },
   {
     q: "\"Made from apple pulp\" — is that gross? Is it safe?",
@@ -458,7 +458,7 @@ export const faq = [
     // Do not reintroduce it in any form — "from whole foods", "from fruit",
     // "just fruit". The figure ships without a source, which is correct while
     // the recipe moves.
-    a: `One serving is 50g: 5 × 10g bites, with 16g fiber in every flavor. Peanut Cookie Dough has 170 calories and 5g protein, Chocolate Raspberry Sea Salt 160 calories and 3g protein, and Maple Butter Pecan 180 calories and 3g protein. Peanut Cookie Dough contains peanuts, milk, and soy. Chocolate Raspberry Sea Salt contains tree nuts (cashews) and soy. Maple Butter Pecan contains tree nuts (cashews and pecans), milk, and soy. All three are manufactured in a facility that also processes milk, eggs, peanuts, tree nuts, fish, crustacean shellfish, wheat, soy, and sesame. Zuca contains oats, which are not certified gluten-free. It isn't suitable if you avoid gluten. ${INGREDIENTS}`,
+    a: `One serving is 50g: 5 × 10g bites, with 16g fiber in every flavor. Peanut Cookie Dough has 170 calories and 5g protein, Chocolate Raspberry Sea Salt 160 calories and 3g protein, and Maple Pecan 180 calories and 3g protein. Peanut Cookie Dough contains peanuts, milk, and soy. Chocolate Raspberry Sea Salt contains tree nuts (cashews) and soy. Maple Pecan contains tree nuts (cashews and pecans), milk, and soy. All three are manufactured in a facility that also processes milk, eggs, peanuts, tree nuts, fish, crustacean shellfish, wheat, soy, and sesame. Zuca contains oats, which are not certified gluten-free. It isn't suitable if you avoid gluten. ${INGREDIENTS}`,
   },
   {
     q: "What will it cost?",
@@ -473,7 +473,7 @@ export const faq = [
   },
   {
     q: "Isn't this just another protein bar?",
-    a: "No, and that's an important distinction. Protein is very important, and the market has done a good job making it easy to get. Almost no one falls short on protein. Dietary fiber is unfortunately a different story, with 95% of American adults and kids not getting enough. Convenient options that deliver real fiber and taste great are hard to find, and Zuca was built to address that need.",
+    a: "No, and that's an important distinction. Protein is very important, and the market has done a good job making it easy to get. Almost no one falls short on protein. Dietary fiber is unfortunately a different story, with 95% of American adults and kids not getting enough. Convenient options that deliver real fiber in something you want to eat are hard to find, and Zuca was built to address that need.",
   },
 ];
 
