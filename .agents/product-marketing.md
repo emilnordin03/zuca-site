@@ -13,7 +13,7 @@ Read this before any marketing work on zucasnacks.com or shop.zucasnacks.com. Th
 **Product category:** High-fiber snack; sits near protein bars, energy bites and better-for-you snacks. People search "high fiber snack", "fiber snacks", "healthy office snacks".
 **Product type:** D2C e-commerce plus direct B2B sales to offices.
 **Business model:** Single servings online at $4.99; bigger orders, office boxes and monthly subscriptions get lower per-pouch prices. Suggested retail $4.49 per pouch. Pre-orders charged at time of order, no promised ship date. Store on Shopify at shop.zucasnacks.com (password-protected until launch).
-**Flavors:** Peanut Cookie Dough, Chocolate Raspberry Sea Salt, Maple Pecan (not "Maple Butter Pecan"). Office boxes mix all three. [NEED: confirm the peanut flavor name; one Nov 13 note says Peanut Chocolate Chip.]
+**Flavors:** Peanut Cookie Dough, Chocolate Raspberry Sea Salt, Maple Pecan (not "Maple Butter Pecan"). Office boxes mix all three. Peanut Cookie Dough confirmed by Emil 2026-11-24.
 
 ## Target Audience
 **Target companies:** Bay Area startups and tech offices that stock snacks (the larger segment; lead with businesses before individuals).

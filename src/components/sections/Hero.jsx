@@ -32,7 +32,7 @@ import { PLATES } from './platePositions.js';
    nothing new. Taste descriptions live in the FAQ. */
 const HERO_ALT =
   'Zuca in three flavours, each 16g fiber per serving: Peanut Cookie Dough, 170 kcal; ' +
-  'Chocolate Raspberry Sea Salt, 160 kcal; Maple Butter Pecan, 180 kcal.';
+  'Chocolate Raspberry Sea Salt, 160 kcal; Maple Pecan, 180 kcal.';
 
 /* The waitlist block's hand-drawn plate — the chosen treatment (Emil, 18 Aug).
    It is the SAME DEVICE the flavour artwork uses for its name plates, which is
